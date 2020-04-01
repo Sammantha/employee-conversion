@@ -1,0 +1,25 @@
+.heading .photo {
+	width: 30%;
+	display: inline-block;
+}
+
+.heading .photo img {
+	border-radius: 50%;
+	margin: 5px;
+}
+
+.heading .details {
+	width: 70%;
+	display: inline-block;
+}
+
+.heading .details h1 {
+	color: black;
+	text-align: left;
+}
+
+.heading .details h3 {
+	color: #bbb;
+	margin-left: 10px;
+	text-align: left;
+}

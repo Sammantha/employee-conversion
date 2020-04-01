@@ -1,24 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
+import Card from './Card/Card';
+
 import './App.css';
+import './Card/card.css';
+import './Heading/heading.css';
+
+const users = require('./users.json');
 
 function App() {
+
+  let userCards = [];
+
+  for (let i = 0; i < users.length; i++) {
+        userCards.push(
+          <Card 
+          id={users[i].id}
+          name={users[i].name}
+          job={users[i].occupation}
+          photo={users[i].avatar}
+        />
+        );
+      }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {userCards}
     </div>
   );
 }
