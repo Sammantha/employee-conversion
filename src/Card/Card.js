@@ -2,7 +2,7 @@ import React from 'react';
 import Heading from '../Heading/Heading';
 import Data from '../Data/Data';
 
-const Card = (props) => {
+const Card = props => {
 	return (
 		<div className="card">
 			<Heading 
@@ -11,7 +11,7 @@ const Card = (props) => {
 		        job={props.job}
 		        photo={props.photo}
 			/>
-			<Data />
+			<Data id={props.id} />
 		</div>
 	);
 }

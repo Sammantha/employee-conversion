@@ -1,12 +1,14 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
-const Numbers = () => {
+const Numbers = props => {
 	return (
-		<Fragment>
-			<p>These</p>
-			<p>Are</p>
-			<p>Numbers</p>
-		</Fragment>
+		<div className="numbers">
+			<h5 className="orange">{props.impressions}</h5>
+			<p>impressions</p>
+			<h5 className="blue">{props.conversions}</h5>
+			<p>conversions</p>
+			<h4 className="green">${props.revenue}</h4>
+		</div>
 	);
 }
 

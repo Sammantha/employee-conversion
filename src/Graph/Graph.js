@@ -1,8 +1,8 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 const Graph = () => {
 	return (
-		<Fragment>This is a graph</Fragment>
+		<div className="graph"><p>This is a graph</p></div>
 	);
 }
 

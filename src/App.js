@@ -4,6 +4,8 @@ import Card from './Card/Card';
 import './App.css';
 import './Card/card.css';
 import './Heading/heading.css';
+import './Numbers/numbers.css';
+import './Data/data.css';
 
 const users = require('./users.json');
 
