@@ -4,7 +4,7 @@ const Heading = (props) => {
 	return (
 		<div className="heading">
 			<div className="photo">
-				<img src={props.photo} alt="Employee Photo" />
+				{avatar(props)}
 			</div>
 			<div className="details">
 				<h1>{props.name}</h1>
@@ -12,6 +12,14 @@ const Heading = (props) => {
 			</div>
 		</div>
 	);
+}
+
+const avatar = (args) => {
+	if (args.photo) {
+		return <img src={args.photo} alt="Employee Photo"/>;
+	} else {
+		return <div className="initial"><h1>{args.name[0]}</h1></div>;
+	}
 }
 
 export default Heading;
