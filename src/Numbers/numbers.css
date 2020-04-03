@@ -1,0 +1,34 @@
+.numbers {
+	margin-right: 25px;
+}
+
+.numbers .orange {
+	color: #EC9E59;
+}
+
+.numbers .blue {
+	color: #2980B9;
+}
+
+.numbers .green {
+	color: #27AE60;
+}
+
+.numbers h5 {
+	font-size: 2rem;
+	margin: 0;
+	text-align: right;
+}
+
+.numbers p {
+	margin: -10px 0 0 0;
+	text-align: right;
+	color: #aaa;
+	font-size: 1.5rem;
+}
+
+.numbers h4 {
+	font-size: 2.25rem;
+	text-align: right;
+	margin: 0;
+}

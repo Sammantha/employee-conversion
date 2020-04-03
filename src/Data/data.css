@@ -1,0 +1,11 @@
+.graph {
+	display: inline-block;
+	align-content: center;
+	width: 65%;
+}
+
+.numbers {
+	display: inline-block;
+	width: calc(35% - 25px);
+	margin-top: -40px;
+}
